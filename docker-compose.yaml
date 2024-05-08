@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  quivato:
+    build: ./
+    container_name: quivato_container
+    ports:
+      - '3000:3000'
+    stdin_open: true
