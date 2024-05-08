@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
-import Header from "./Header";
+import HeaderComponent from "./component-parts/HeaderComponent";
 import React, { useRef } from "react";
-import Footer from "./Footer";
+import FooterComponent from "./component-parts/FooterComponent";
 
 
 const Contact = () => {
@@ -25,7 +25,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
+      <HeaderComponent />
       <section className="contact-section pt-5 pb-5">
         <div className="container">
           <div className="row">
@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <Footer />
+      <FooterComponent />
 
     </>
   );

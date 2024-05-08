@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Common = (props) => {
+const CommonComponent = (props) => {
   return (
     <>
       <section className="common_section">
@@ -42,4 +42,4 @@ const Common = (props) => {
   );
 };
 
-export default Common;
+export default CommonComponent;

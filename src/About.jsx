@@ -1,10 +1,10 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
-import Common from "./Common";
+import HeaderComponent from "./component-parts/HeaderComponent";
+import FooterComponent from "./component-parts/FooterComponent";
+import CommonComponent from "./component-parts/CommonComponent";
 import tec from "./img/tec.gif";
 
-const Carousel = ({ images }) => {
+const CarouselComponent = ({ images }) => {
   return (
   <div className="container pt-5 pb-5">
     <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
@@ -39,17 +39,17 @@ const About = () => {
   return (
     <>
 
-      <Header />
+      <HeaderComponent />
 
-      <Common
+      <CommonComponent
         name="Welcome to About page"
         imgsrc={tec}
         visit="/contact"
         btnName="Contact us"
       />
-      <Carousel images={images} />
+      <CarouselComponent images={images} />
 
-      <Footer />
+      <FooterComponent />
 
     </>
   );

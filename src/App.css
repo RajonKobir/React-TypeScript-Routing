@@ -10,6 +10,10 @@
   color:#3498db !important;
   animation: shake 0.5s;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color:#3498db !important;
+  animation: shake 0.5s;
+}
 .btn-get-started{
   border: 2px solid blue;
   background-color: transparent;

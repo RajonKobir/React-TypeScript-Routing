@@ -1,21 +1,14 @@
 import React from "react";
-import HeaderComponent from "./component-parts/HeaderComponent";
-import FooterComponent from "./component-parts/FooterComponent";
-import CarouselComponent from "./component-parts/CarouselComponent";
 import { Link } from "react-router-dom";
 import web from "./img/web.gif"
 import android from "./img/android.gif";
 import gd from "./img/gd.gif";
-
 import dm from "./img/dml.gif"
 import ml from "./img/Machine-Learning.gif";
 import datamining from "./img/data_mining.gif";
 
-import CommonComponent from './component-parts/CommonComponent';
-import tec from "./img/tec.gif";
 
-
-function Services() {
+function ServicesComponent() {
   return (
     <>
 
@@ -96,30 +89,4 @@ function Services() {
 }
 
 
-
-
-
-const Home = () => {
-
-  return (
-    <>
-
-      <HeaderComponent />
-
-      <CommonComponent name='Grow your business with' imgsrc={tec} visit='./services' btnName='Get Started' />
-      
-      <Services />
-      
-      <CarouselComponent images={[
-        'https://t4.ftcdn.net/jpg/05/02/15/49/360_F_502154918_DJRLI4Q6bnW6V3zFGaHvzozUOfSlXQ5m.jpg',
-        'https://img-b.udemycdn.com/course/750x422/4874706_df52_4.jpg',
-        'https://w0.peakpx.com/wallpaper/59/567/HD-wallpaper-web-designing-training-in-pune-web-design-web-design-training-in-pune-website-design-training-web-development-course-in-pune-web-development-training-in-india-website-design-training-in-india.jpg',
-      ]} />
-
-      <FooterComponent />
-
-    </>
-  );
-};
-
-export default Home;
+export default ServicesComponent;

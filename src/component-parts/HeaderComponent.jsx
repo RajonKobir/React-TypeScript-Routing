@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./NavbarComponent";
 
 
-const Header = () => {
+const HeaderComponent = () => {
 
   return (
     <>
@@ -13,4 +13,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderComponent;

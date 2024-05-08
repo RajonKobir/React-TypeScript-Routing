@@ -1,14 +1,20 @@
-FROM node:16-alpine
+# Use Node.js Alpine base image
+FROM node:20-alpine
 
-WORKDIR /quivato
+# Create and set the working directory inside the container
+WORKDIR /app
 
+# Copy package.json and package-lock.json to the working directory
 COPY package.json .
 
+# Install dependencies
 RUN npm install
 
+# Copy the entire codebase to the working directory
 COPY . .
 
-EXPOSE 3000
-# required for docker desktop port mapping
+# Expose the port your app runs on (replace <PORT_NUMBER> with your app's actual port)
+EXPOSE 5173
 
-CMD ["npm", "start"]
+# Define the command to start your application (replace "start" with the actual command to start your app)
+CMD [ "npm","run","dev" ]

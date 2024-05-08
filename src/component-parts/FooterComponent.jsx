@@ -1,7 +1,9 @@
 import React from "react";
 
 
-const Footer = () => {
+const FooterComponent = () => {
+
+  const CurrentYear = new Date().getFullYear();
 
   return (
     <>
@@ -79,7 +81,7 @@ const Footer = () => {
           </div>
           <div className="row">
             <div className="col-md-12 text-center">
-              <p>&copy; 2024 Your Company. All rights reserved.</p>
+              <p>&copy; {CurrentYear} Your Company. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -88,4 +90,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterComponent;
