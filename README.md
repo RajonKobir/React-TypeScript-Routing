@@ -12,7 +12,7 @@ Before you begin, ensure you have the following installed on your system:
 
    ```bash
    git clone https://github.com/RajonKobir/React-TypeScript-Routing
-   cd quivato
+   cd React-TypeScript-Routing
    ```
 
 2. **Build the Docker Image For the First Time:**
